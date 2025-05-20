@@ -65,5 +65,6 @@ describe('Login', () => {
 
         // Assert
         // Validate that the error message is visible
+        Login.validateInvalidCPF()
     })
 });

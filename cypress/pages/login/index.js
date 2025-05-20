@@ -49,7 +49,7 @@ class Login {
 
     }
     validateLoginErrorEmail() {
-        cy.get(el.validateErrorLoginEmail).should('be.visible')
+        cy.get(el.validateErrorLogin).should('be.visible')
     }
 
     LoginInvalidCPF() {
@@ -60,6 +60,10 @@ class Login {
             cy.get(el.inputPassword).type(user.password)
             cy.get(el.btnLogin).click()
         })
+    }
+
+    validateInvalidCPF(){
+        cy.get(el.validateErrorLogin).should('be.visible')
     }
 
 }

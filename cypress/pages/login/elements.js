@@ -6,5 +6,5 @@ export const elements = {
     btnLogin: '.btn-login',
     btnSair: '#btn-sair',
     validateErrorLoginPassword: '.error-message',
-    validateErrorLoginEmail: '.erro',
+    validateErrorLogin: '.erro',
 }
